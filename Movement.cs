@@ -34,7 +34,7 @@ public class Movement : MonoBehaviour
     {
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
-            fallVelocity.y = jumpVelocity;
+            fallVelocity.y = jumpVelocity * Time.deltaTime;
         }
     }
 
